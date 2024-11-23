@@ -1,0 +1,22 @@
+{
+  "name": "curso_autom_puppeteer_jest",
+  "version": "1.0.0",
+  "description": "Proyecto para el desafio de Jest del curso de automatización de Puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-snapshots": "jest --config=jest.config.js --detectOpenHandles --forceExit",
+    "test-snapshots-update": "jest --config=jest.config.js --updateSnapshot --detectOpenHandles --forceExit",
+    "test:percy": "percy exec -- jest -i \"./tests-snapshots/__tests__/percy.test.js\""
+  },
+  "author": "Jesús Alberto N.",
+  "license": "ISC",
+  "devDependencies": {
+    "@percy/cli": "^1.30.2",
+    "@percy/puppeteer": "^2.0.2",
+    "jest": "^29.7.0",
+    "jest-image-snapshot": "^6.4.0",
+    "prettier": "^3.3.3",
+    "puppeteer": "^23.9.0"
+  }
+}
